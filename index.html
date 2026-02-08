@@ -31,21 +31,34 @@ body {
 
 
     /* HEADER */
-    header {
-      position: relative;
-      background: white;
-      border-bottom: 1px solid var(--border);
-      padding: 80px 0;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;   /* reduced from 80px */
+}
 
-  .logo {
-      position: absolute;
-      right: 120px;   /* moved to right */
-      top: 50%;
-      transform: translateY(-50%);
-      height: 240px; /* larger logo */
-    }
+/* Header Layout */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Text area */
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  position: static;   /* IMPORTANT: no absolute positioning */
+  height: 240px;      /* your larger size */
+  flex: 0 0 auto;
+}
+
 
 
     .brand-title {
@@ -164,16 +177,19 @@ body {
 <body>
 
   <header class="header-bg">
-    <div class="container" style="position: relative;">
-    <img src="logo.png" alt="P2D Logo" class="logo">
-
-    <h1 class="brand-title">
+    
+    <div class="container header-inner">
+    <div class="header-text">
+      
+      <h1 class="brand-title">
       Practice2Drive Driving School
     </h1>
 
     <p class="subtitle">
       Practice2Drive (P2D) Driving School provides expert, personalized driving instruction to help learners become confident, safe, and responsible drivers. We focus on real-world skills, road safety, and exam readiness to ensure every learner is fully prepared.
     </p>
+      </div>
+      <img src="logo.png" alt="P2D Logo" class="logo">
       </div>
   </header>
 
