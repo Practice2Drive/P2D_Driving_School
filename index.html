@@ -69,6 +69,27 @@
       padding: 18px 16px;
       margin-top: 20px;
     }
+    /* Background Themes */
+
+.header-bg {
+  background-color: #E8F5E9; /* Light green */
+}
+
+.price-bg {
+  background-color: #F3E8FF; /* Light purple */
+}
+
+.booking-bg {
+  background-color: #FDECEA; /* Light red */
+}
+
+.contact-bg {
+  background-color: #E8F5E9; /* Same light green as header */
+}
+
+.links-bg {
+  background-color: #FFFFFF; /* White */
+}
 
    h2 {
     margin: 0 0 12px;
@@ -142,7 +163,7 @@
 
 <body>
 
-  <header>
+  <header class="header-bg">
     <img src="logo.png" alt="P2D Logo" class="logo">
 
     <h1 class="brand-title">
@@ -156,7 +177,7 @@
 
   <main class="container">
 
-    <section>
+    <section class="price-bg">
       <h2>PRICE DETAILS</h2>
       
       <h3>Lesson Price Details</h3>
@@ -226,7 +247,7 @@
       
     </section>
 
-    <section>
+    <section class="booking-bg">
   <h2>BOOKING</h2>
 
   <div style="display:flex; align-items:center; gap:15px; font-size:20px;">
@@ -248,9 +269,7 @@
   </div>
 </section>
 
-
-
- <section>
+ <section class="links-bg">
   <h2>USEFUL LINKS</h2>
   <ul>
         <li>
@@ -285,8 +304,7 @@
   </ul>
 </section>
 
-
-<section>
+<section class="contact-bg">
   <h2>CONTACT</h2>
 
   <div style="display:flex; gap:30px; align-items:center; font-size:28px;">
